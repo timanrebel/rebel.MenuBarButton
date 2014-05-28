@@ -8,6 +8,8 @@ _.extend(this, {
 	},
 
 	setArgs: function(config) {
+		if(config.delay)
+			$.delay = config.delay;
 
 		var properties = {
 			left: config.left,
