@@ -44,7 +44,7 @@ _.extend(this, {
 			properties.title = L(config.title, config.title);
 
 			if (OS_ANDROID)
-				properties.color = '#ff4f00';
+				properties.color = Alloy.Globals.color;
 		}
 
 		$.button.applyProperties(properties);
