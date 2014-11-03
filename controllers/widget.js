@@ -8,8 +8,9 @@ _.extend(this, {
 	},
 
 	setArgs: function(config) {
-		if(config.delay)
+		if(config.delay) {
 			$.delay = config.delay;
+		}
 
 		var properties = {
 			left: config.left,
@@ -43,8 +44,9 @@ _.extend(this, {
 		} else if (config.title) {
 			properties.title = L(config.title, config.title);
 
-			if (OS_ANDROID)
+			if (OS_ANDROID) {
 				properties.color = Alloy.Globals.color;
+			}
 		}
 
 		$.button.applyProperties(properties);
